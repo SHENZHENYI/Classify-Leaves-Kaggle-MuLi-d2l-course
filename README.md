@@ -26,7 +26,7 @@ The tricks that I used are the followings:
 
 - Label smoothing helps improve 1-2%.
 
-- Train with this configuration with 50 epochs
+- Train with this configuration with 50 epochs.
 
 - Make majority voting of 5 folds of the model.
 
