@@ -1,7 +1,7 @@
 # Classify-Leaves-Kaggle-MuLi-d2l-course
 One competition held by d2l course https://courses.d2l.ai/zh-v2/. The competition is on https://www.kaggle.com/c/classify-leaves/submissions
 
-## My current best result is 0.98681 in private LB, and 0.98159 in public LB. It is achieved by an ensemble of 10 models.
+#### My current best result is 0.98681 in private LB, and 0.98159 in public LB. It is achieved by an ensemble of 10 models.
 
 | Tempts  | Private LB | Public LB |
 | ------------- | ------------- |  ------------- |
