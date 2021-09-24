@@ -5,9 +5,9 @@ One competition held by d2l course https://courses.d2l.ai/zh-v2/. The competitio
 
 | Tempts  | Private LB | Public LB |
 | ------------- | ------------- |  ------------- |
-| one of the 5 folds  | 0.98681  | 0.98159 |
+| one of the 5 folds  | 0.98181  | 0.97818 | 
 | ensemble of 5 folds  | 0.98363  | 0.97681 |
-| ensemble of 5 folds and 5 my other best models  | 0.98181  | 0.97818 |
+| ensemble of 5 folds and 5 my other best models | 0.98681  | 0.98159 |
 
 
 The tricks that I used are the followings:
