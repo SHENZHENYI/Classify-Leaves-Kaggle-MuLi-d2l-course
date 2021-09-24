@@ -14,7 +14,7 @@ The tricks that I used are the followings:
 
 - A set of albumentations augmentations: albumentations.Resize(112, 112, interpolation=cv2.INTER_AREA), albumentations.RandomRotate90(p=0.5), albumentations.Transpose(p=0.5), albumentations.Flip(p=0.5), albumentations.ShiftScaleRotate(shift_limit=0.0625, scale_limit=0.0625, rotate_limit=45, border_mode=1, p=0.5), #randAugment(), albumentations.Normalize(), AT.ToTensorV2(), I did not use randaug because I find it actually degrades the performance on the validation set.
 
-- Mixup augemntation.
+- Mixup augemntation with a prob of 0.1.
 
 - Cosine Annealing with the max_lr of 3e-4 and min_lr of max_lr/20 @ a batchsize of 64. Note that I used a technique called LRfinder to find the max_lr, a method introduced in 'Cyclical Learning Rates for Training Neural Networks' by Leslie N. Smith.
 
