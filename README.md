@@ -43,6 +43,6 @@ The tricks that I used are the followings:
 
 - Train with this configuration with 50 epochs.
 
-- Make majority voting of 5 folds of the model.
+- Make majority voting of 5 folds of the model. 
 
 - Use more models (my 5 other best models, varying in architectures -- seresnest50 and resnest50d, using larger resolution -- 224x224) to make votes.
