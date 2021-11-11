@@ -9,15 +9,21 @@ One competition held by d2l course https://courses.d2l.ai/zh-v2/. The competitio
 | ensemble of 5 folds  | 0.98363  | 0.97681 |
 | ensemble of 5 folds and 5 my other best models | 0.98681  | 0.98159 |
 
-####UPDATE
-As noted by Wubba1ubadubdub in my Kaggle Discussion (https://www.kaggle.com/c/classify-leaves/discussion/274925), the following training block is training the same fold every time.
+#### UPDATE
+As noted by Wubba1ubadubdub in my Kaggle Discussion (https://www.kaggle.com/c/classify-leaves/discussion/274925), the following training block is training the same fold every time which intented to be different.
 ```
 for fold in range(FOLD):
   print(f'Start Fold{fold}...')
   train_csv = csv.iloc[train_folds[2]].reset_index()
   val_csv = csv.iloc[val_folds[2]].reset_index()
 ```
-
+It should be changed to
+```
+for fold in range(FOLD):
+  print(f'Start Fold{fold}...')
+  train_csv = csv.iloc[train_folds[fold]].reset_index()
+  val_csv = csv.iloc[val_folds[fold]].reset_index()
+```
 
 The tricks that I used are the followings:
 
